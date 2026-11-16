@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e6">
+  <meta name="description" content="Discover Cafe Rick Dash, a premium coastal cafe experience at Varsoli Beach, Alibaug. Request a table for your next beachside moment.">
+  <title>Cafe Rick Dash — Your Beachside Table Awaits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Cafe Rick Dash home">
+        <span class="brand-emblem" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><path d="M8 25.5c7.6 0 12.5-4.1 14-13.5 1.6 9.4 6.5 13.5 14 13.5M22 12v23M12 35h20" stroke="currentColor" stroke-width="1.25"/><circle cx="22" cy="8" r="2" fill="currentColor"/></svg></span>
+        <span class="brand-copy"><span class="brand-name">Cafe Rick Dash</span><span class="brand-tag">Alibaug · Maharashtra</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+        <a class="nav-reserve" href="#reservations">Reserve a table <span aria-hidden="true">↗︎</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Representative coastal photograph of a tropical beach near the sea"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-inner wrap">
+        <p class="eyebrow hero-eyebrow"><span></span> Varsoli Beach · Alibaug</p>
+        <h1 id="hero-title">Your beachside<br>table <em>awaits.</em></h1>
+        <p class="hero-intro">Escape the ordinary. Enjoy beautiful views, delicious food and unforgettable moments at Cafe Rick Dash.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#reservations">Reserve your table <span aria-hidden="true">↗︎</span></a><a class="hero-secondary" href="#experience">Explore the experience <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-location"><span class="location-dot"></span> VARSOLI BEACH <i>·</i> ALIBAUG, MAHARASHTRA</div>
+      <div class="hero-counter"><span>01</span><i></i><span>COASTAL MOMENTS</span></div>
+    </section>
+
+    <section class="reservation-section section-pad" id="reservations" aria-labelledby="reservation-title">
+      <div class="wrap reservation-grid">
+        <div class="reservation-copy reveal">
+          <p class="eyebrow"><span></span> Your moment by the sea</p>
+          <h2 id="reservation-title">Make your<br><em>reservation.</em></h2>
+          <p class="section-lead">Plan your visit and let us prepare a memorable beachside dining experience.</p>
+          <div class="reservation-points"><span><b>01</b> Tell us when you’d like to visit</span><span><b>02</b> We’ll be in touch to confirm</span></div>
+          <p class="provisional-note">A reservation request is not a confirmed booking. Our team will contact you to confirm your table.</p>
+        </div>
+        <form class="reservation-form reveal" id="reservation-form" novalidate>
+          <div class="form-heading"><span>Request a table</span><span class="form-spark" aria-hidden="true">✳︎</span></div>
+          <div class="form-grid">
+            <label class="field field-full"><span>Full name <i>*</i></span><input name="name" type="text" placeholder="Your name" autocomplete="name" required minlength="2" aria-describedby="name-error"><small class="field-error" id="name-error"></small></label>
+            <label class="field field-full"><span>Mobile number <i>*</i></span><input name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" inputmode="tel" required aria-describedby="phone-hint phone-error"><small class="field-hint" id="phone-hint">Enter a 10-digit Indian mobile number, with or without +91.</small><small class="field-error" id="phone-error"></small></label>
+            <label class="field"><span>Reservation date <i>*</i></span><input name="date" type="date" required aria-describedby="date-error"><small class="field-error" id="date-error"></small></label>
+            <label class="field"><span>Preferred time <i>*</i></span><input name="time" type="time" required aria-describedby="time-error"><small class="field-hint">Preference only; subject to confirmation.</small><small class="field-error" id="time-error"></small></label>
+            <label class="field field-full"><span>Number of guests <i>*</i></span><select name="guests" required aria-describedby="guests-error"><option value="">Select guests</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9">9 guests</option><option value="10">10 guests</option><option value="11">More than 10 guests</option></select><small class="field-error" id="guests-error"></small></label>
+            <label class="field field-full"><span>Special requests <small>(optional)</small></span><textarea name="requests" rows="3" placeholder="Anything you’d like us to know?"></textarea></label>
+          </div>
+          <button class="button button-submit" id="reservation-submit" type="submit"><span class="button-label">Request a reservation</span><span class="button-icon" aria-hidden="true">↗︎</span></button>
+          <div class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden></div>
+          <p class="form-note">Fields marked * are required. Your request will need confirmation from Cafe Rick Dash.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div class="about-media reveal"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85" alt="Representative view of a quiet tropical shoreline and blue sea" loading="lazy"><span class="media-caption"><i>01</i> A slower pace, by the coast</span><span class="about-outline" aria-hidden="true"></span></div>
+        <div class="about-copy reveal">
+          <p class="eyebrow"><span></span> A coastal point of view</p>
+          <h2 id="about-title">A little escape<br><em>by the sea.</em></h2>
+          <p class="section-lead">At Cafe Rick Dash, enjoy a relaxed dining experience surrounded by the beauty of the coast. A place to slow down, connect with your favourite people and create memorable moments by the sea.</p>
+          <p class="body-copy">Set your own pace. Come together over good food, linger a little longer, and let the shoreline set the mood for the day.</p>
+          <a class="inline-link" href="#experience">Discover the experience <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section section-pad" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="section-heading experience-heading reveal"><div><p class="eyebrow"><span></span> Make room for a moment</p><h2 id="experience-title">More than<br><em>just a meal.</em></h2></div><p class="section-lead">Discover the beauty of slowing down, enjoying good food and making memories by the sea.</p></div>
+        <div class="experience-grid">
+          <article class="experience-card experience-main reveal"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Representative warm and relaxed cafe dining interior" loading="lazy"><div class="experience-caption"><span>01 / THE SETTING</span><h3>A seat to settle into</h3></div></article>
+          <article class="experience-card reveal"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Representative coastal landscape in soft evening light" loading="lazy"><div class="experience-caption"><span>02 / THE COAST</span><h3>Let the day unwind</h3></div></article>
+          <article class="experience-card reveal"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=85" alt="Representative fresh meal arranged for sharing" loading="lazy"><div class="experience-caption"><span>03 / THE TABLE</span><h3>Good things to share</h3></div></article>
+        </div>
+        <div class="experience-reserve reveal"><p>A little time away can go a long way.</p><a class="button button-outline-light" href="#reservations">Plan your visit <span aria-hidden="true">↗︎</span></a></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="section-heading menu-heading reveal"><div><p class="eyebrow"><span></span> From the table</p><h2 id="menu-title">A taste worth<br><em>coming for.</em></h2></div><p class="section-lead">A sample of what a coastal menu could hold. Menu items and prices are for presentation and require confirmation from Cafe Rick Dash.</p></div>
+        <div class="menu-disclaimer reveal"><span aria-hidden="true">✳︎</span> SAMPLE MENU · ITEMS AND PRICES SUBJECT TO CAFE RICK DASH CONFIRMATION</div>
+        <div class="menu-tabs reveal" role="tablist" aria-label="Sample menu categories"><button class="menu-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="menu-list" data-category="starters">Starters</button><button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menu-list" data-category="main-course">Main course</button><button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menu-list" data-category="pizza-pasta">Pizza &amp; pasta</button><button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menu-list" data-category="snacks">Snacks</button><button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menu-list" data-category="desserts">Desserts</button><button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menu-list" data-category="beverages">Beverages</button><button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menu-list" data-category="mocktails">Mocktails</button></div>
+        <div class="menu-list reveal" id="menu-list" role="tabpanel" tabindex="0" aria-live="polite" aria-label="Sample menu items"></div>
+        <div class="menu-bottom"><p>Planning a visit? Send us a reservation request and we’ll be in touch.</p><a class="inline-link" href="#reservations">Request a table <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-heading gallery-heading reveal"><div><p class="eyebrow"><span></span> A glimpse of the coast</p><h2 id="gallery-title">Moments at<br><em>Cafe Rick Dash.</em></h2></div><p class="section-lead">Imagine the salt air, the easy pace and one more story around the table.</p></div>
+        <p class="image-disclaimer reveal">Representative coastal and dining imagery shown for presentation. Cafe Rick Dash photography to be confirmed.</p>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-tall reveal" type="button" data-full="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=90" aria-label="Enlarge representative beach and sea photograph"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85" alt="Representative tropical shoreline and blue sea" loading="lazy"><span class="gallery-label">Coastal surroundings <b aria-hidden="true">↗︎</b></span></button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=90" aria-label="Enlarge representative cafe interior photograph"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=850&q=85" alt="Representative cafe dining room with warm ambient light" loading="lazy"><span class="gallery-label">Cafe ambience <b aria-hidden="true">↗︎</b></span></button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1800&q=90" aria-label="Enlarge representative drinks photograph"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=850&q=85" alt="Representative cold drinks served for a relaxed afternoon" loading="lazy"><span class="gallery-label">Food &amp; drinks <b aria-hidden="true">↗︎</b></span></button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=90" aria-label="Enlarge representative coastal sunset photograph"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=850&q=85" alt="Representative coastline in soft sunset light" loading="lazy"><span class="gallery-label">Evening by the coast <b aria-hidden="true">↗︎</b></span></button>
+          <button class="gallery-item gallery-wide reveal" type="button" data-full="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1800&q=90" aria-label="Enlarge representative shared meal photograph"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=85" alt="Representative colorful food prepared for sharing" loading="lazy"><span class="gallery-label">Around the table <b aria-hidden="true">↗︎</b></span></button>
+        </div>
+        <div class="gallery-cta reveal"><span>Make your next memory here.</span><a class="inline-link" href="#reservations">Reserve your table <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="reservation-banner" aria-labelledby="banner-title"><div class="banner-image" role="img" aria-label="Representative ocean view along the Alibaug coast"></div><div class="banner-overlay"></div><div class="banner-content reveal"><p class="eyebrow eyebrow-light"><span></span> Make it a day to remember</p><h2 id="banner-title">Your next favourite<br>moment <em>starts here.</em></h2><p>Make your visit memorable. Request a table at Cafe Rick Dash.</p><a class="button button-primary" href="#reservations">Book your table <span aria-hidden="true">↗︎</span></a></div></section>
+
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="contact-intro reveal"><p class="eyebrow"><span></span> Find your way to the coast</p><h2 id="contact-title">Meet us<br><em>in Alibaug.</em></h2><p class="section-lead">Your next beachside moment begins at Varsoli Beach.</p></div>
+        <div class="location-card reveal"><div class="location-art" role="img" aria-label="Decorative location illustration representing the Varsoli coastline"><span class="map-sun"></span><span class="map-wave wave-one"></span><span class="map-wave wave-two"></span><span class="map-marker"><i></i></span><span class="map-label">VARSOLI BEACH</span></div><div class="location-caption"><span>LOCATION · PROVISIONAL</span><strong>Varsoli Beach, Alibaug</strong><small>Exact address and map pin to be confirmed.</small></div></div>
+        <div class="contact-details reveal">
+          <div class="contact-detail"><span class="detail-label">Call us</span><p>Phone number to be confirmed</p></div>
+          <div class="contact-detail"><span class="detail-label">Write to us</span><p>Email address to be confirmed</p></div>
+          <div class="contact-detail"><span class="detail-label">Opening hours</span><p>Hours to be confirmed</p></div>
+          <div class="contact-detail"><span class="detail-label">Follow the coast</span><a href="https://www.instagram.com/caferickdash/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗︎</span></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-main"><a class="brand footer-brand" href="#home"><span class="brand-emblem" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><path d="M8 25.5c7.6 0 12.5-4.1 14-13.5 1.6 9.4 6.5 13.5 14 13.5M22 12v23M12 35h20" stroke="currentColor" stroke-width="1.25"/><circle cx="22" cy="8" r="2" fill="currentColor"/></svg></span><span class="brand-copy"><span class="brand-name">Cafe Rick Dash</span><span class="brand-tag">Alibaug · Maharashtra</span></span></a><p class="footer-note">Slow down. Take it in.<br>Leave room for one more moment.</p><nav class="footer-nav" aria-label="Footer navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav><a class="footer-reserve" href="#reservations">Reserve a table <span aria-hidden="true">↗︎</span></a></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Cafe Rick Dash</span><span>Varsoli Beach · Alibaug, Maharashtra</span><a href="https://www.instagram.com/caferickdash/" target="_blank" rel="noopener noreferrer">Instagram ↗︎</a></div></footer>
+
+  <a class="mobile-reserve" href="#reservations">Reserve a table <span aria-hidden="true">↗︎</span></a>
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Enlarged gallery image" hidden><button class="lightbox-close" type="button" aria-label="Close image">×</button><button class="lightbox-prev" type="button" aria-label="Previous image">←</button><figure><img src="" alt=""><figcaption></figcaption></figure><button class="lightbox-next" type="button" aria-label="Next image">→</button></div>
+</body>
+</html>
